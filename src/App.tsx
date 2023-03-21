@@ -3,28 +3,26 @@ import './App.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Routes from "./utils/Routes";
+import Layout from "./layout";
 
 const router = createBrowserRouter([
 		{
-				path: "/",
-				element: <Home/>,
+				path: Routes.LAYOUT,
+				element: <Layout/>,
 		},
 		{
-				path: "/services",
+				path: Routes.HOME,
+				element: <Home/>
+		},
+		{
+				path: Routes.SERVICES,
 				element: <Services/>
 		}
 ]);
 
 function App() {
-		return (
-				<>
-						<Header/>
-						<RouterProvider router={router}/>
-						<Footer/>
-				</>
-		)
+		return <RouterProvider router={router}/>
 }
 
 export default App;

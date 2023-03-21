@@ -1,0 +1,8 @@
+.root {
+
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}

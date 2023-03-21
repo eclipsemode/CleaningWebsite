@@ -1,0 +1,12 @@
+.root {
+    background: #eff5fc;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
