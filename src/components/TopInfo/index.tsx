@@ -5,13 +5,14 @@ import {useAppSelector} from "../../app/hooks";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import {Link} from "react-router-dom";
 import styles from './index.module.css'
+import MenuIcon from '@mui/icons-material/Menu';
 
 const TopInfo = () => {
 		const {city} = useAppSelector(state => state.location)
 		return (
-				<Box sx={{width: '100%', height: '42px', background: '#222', display: 'flex', alignItems: 'center'}}>
+				<Box className={styles.box}>
 						<Container>
-								<Stack direction='row' alignItems='center' justifyContent='space-between'>
+								<div className={styles.container}>
 										<Stack direction='row' alignItems='center' columnGap={1}>
 												<InfoIcon color='info'/>
 												<p style={{margin: '0', color: '#fff'}}>Приедем в удобное время</p>
@@ -22,7 +23,9 @@ const TopInfo = () => {
 												<FiberManualRecordIcon sx={{fontSize: '10px', color: '#fff'}}/>
 												<p style={{margin: '0', color: '#fff'}}>Есть свободный мастер</p>
 										</Stack>
-								</Stack>
+
+										<MenuIcon className={styles.menuButton}/>
+								</div>
 						</Container>
 				</Box>
 		);

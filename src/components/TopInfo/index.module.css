@@ -1,8 +1,47 @@
 .root {
 
 }
+
 .link {
     text-decoration: none;
     color: #fff;
     border-bottom: 1px dashed #fff;
+}
+
+.box {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #222;
+    display: flex;
+    align-items: center
+}
+
+.menuButton {
+    display: none !important;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menuButton {
+        display: block !important;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        padding: 5px;
+    }
 }

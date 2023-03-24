@@ -1,7 +1,7 @@
-const Routes = {
+const RouterService = {
 		LAYOUT: '/',
 		HOME: '',
 		SERVICES: '/services'
 }
 
-export default Routes;
+export default RouterService;

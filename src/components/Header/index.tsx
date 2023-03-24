@@ -1,24 +1,26 @@
 import React from 'react';
 import styles from './index.module.css'
-import Logo from '../../assets/images/logo.jpeg'
+import Logo from '../../assets/images/logo.png'
 import {Button, Container, Link, Stack} from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import MenuButton from "../MenuButton";
-import Routes from "../../utils/Routes";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import CallIcon from '@mui/icons-material/Call';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import {useNavigate} from "react-router-dom";
+import RouterService from "../../services/RouterService";
 
 const Header = () => {
+		const navigate = useNavigate();
 
 		return (
 				<header className={styles.root}>
 						<Container className={styles.container} sx={{display: 'flex', height: 'fit-content', alignItems: 'center', justifyContent: 'space-between'}}>
-								<img width='100' src={Logo} alt="logotype"/>
+								<img width='100' src={Logo} alt="logotype" onClick={() => navigate(RouterService.HOME)}/>
 
-								<Stack alignItems='center'>
+								<Stack className={styles.menuBlock} alignItems='center'>
 
 										<Stack direction='row' alignItems='center' columnGap={4}>
 												<Stack direction='row' columnGap={2}>
@@ -37,24 +39,24 @@ const Header = () => {
 										<Stack direction='row' columnGap={1}>
 												<Stack direction='row' alignItems='center'>
 														<MenuButton title='Услуги' children={[
-																{id: 1, path: Routes.HOME, name: 'Химчистка диванов'},
-																{id: 2, path: Routes.HOME, name: 'Химчистка мягкой мебели'},
-																{id: 3, path: Routes.HOME, name: 'Химчистка кожанной мебели'},
-																{id: 4, path: Routes.HOME, name: 'Химчистка стульев'},
-																{id: 5, path: Routes.HOME, name: 'Химчистка кресел'},
-																{id: 6, path: Routes.HOME, name: 'Химчистка матрасов'},
-																{id: 7, path: Routes.HOME, name: 'Химчистка ковролина'},
-																{id: 8, path: Routes.HOME, name: 'Химчистка автомобилей'},
+																{id: 1, path: RouterService.HOME, name: 'Химчистка диванов'},
+																{id: 2, path: RouterService.HOME, name: 'Химчистка мягкой мебели'},
+																{id: 3, path: RouterService.HOME, name: 'Химчистка кожанной мебели'},
+																{id: 4, path: RouterService.HOME, name: 'Химчистка стульев'},
+																{id: 5, path: RouterService.HOME, name: 'Химчистка кресел'},
+																{id: 6, path: RouterService.HOME, name: 'Химчистка матрасов'},
+																{id: 7, path: RouterService.HOME, name: 'Химчистка ковролина'},
+																{id: 8, path: RouterService.HOME, name: 'Химчистка автомобилей'},
 														]}/>
 														<ArrowDropDownIcon sx={{fontSize: '15px'}}/>
 												</Stack>
 
 												<Stack direction='row' alignItems='center'>
 												<MenuButton title='Бизнесу' children={[
-														{id: 1, path: Routes.HOME, name: 'Химчистка мебели в офисах'},
-														{id: 2, path: Routes.HOME, name: 'Химчистка мебели в ресторанах'},
-														{id: 3, path: Routes.HOME, name: 'Химчистка мебели в кинотеатрах и театрах'},
-														{id: 4, path: Routes.HOME, name: 'Химчистка мебели в учебных заведениях'},
+														{id: 1, path: RouterService.HOME, name: 'Химчистка мебели в офисах'},
+														{id: 2, path: RouterService.HOME, name: 'Химчистка мебели в ресторанах'},
+														{id: 3, path: RouterService.HOME, name: 'Химчистка мебели в кинотеатрах и театрах'},
+														{id: 4, path: RouterService.HOME, name: 'Химчистка мебели в учебных заведениях'},
 												]}/>
 														<ArrowDropDownIcon sx={{fontSize: '15px'}}/>
 												</Stack>

@@ -1,0 +1,25 @@
+.root {
+    background: url("../../assets/images/default/footer-back.png");
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.first {
+
+}
+
+.first>p {
+    color: #fff;
+    font-size: 16px;
+}
+.first>p:first-of-type {
+    margin-bottom: 30px;
+}
+.first>img {
+    margin-bottom: 30px;
+}
+
+.first>a {
+    color: #fff;
+    margin: 16px 0;
+}
