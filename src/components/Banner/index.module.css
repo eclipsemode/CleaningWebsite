@@ -43,4 +43,7 @@
         text-align: center;
     }
 
+    .title {
+        width: min-content;
+    }
 }
