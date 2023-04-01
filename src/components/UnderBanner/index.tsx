@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container} from "@mui/material";
 import styles from './index.module.css'
+import Title from "../../ui/Title";
 
 const UnderBanner = () => {
 		return (
@@ -16,7 +17,7 @@ const UnderBanner = () => {
 						<div className={styles.bottom}>
 								<Container>
 										<div className={styles.bottomContainer}>
-												<h3 className={styles.bottomText}>ПОЧЕМУ ВЫБИРАЮТ <span className={styles.bottomTextSecond}>CRYSTAL?</span></h3>
+												<Title textMain='ПОЧЕМУ ВЫБИРАЮТ' textSecondary='CRYSTAL?'/>
 										</div>
 								</Container>
 						</div>

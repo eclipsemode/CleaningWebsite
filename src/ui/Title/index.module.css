@@ -1,0 +1,10 @@
+.root {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+}
+
+.root > span {
+    color: #ff9001;
+}
