@@ -9,7 +9,7 @@ const PriceBlock = () => {
 		return (
 				<section className={styles.root}>
 						<Container>
-								<Title color='#0360c0' textMain='Стоимость' textSecondary='химчистки мебели'/>
+								<Title color='secondary' textMain='Стоимость' textSecondary='химчистки мебели' style={{marginTop: '50px'}}/>
 						</Container>
 
 						<Products/>

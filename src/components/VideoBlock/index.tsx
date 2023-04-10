@@ -55,7 +55,7 @@ const VideoBlock = () => {
 				<section className={styles.root}>
 						<Container className={styles.container}>
 								<Stack justifyContent='center' textAlign='center'>
-										<Title color='#0360c0' textMain='Как мы' textSecondary='чистим мебель?'/>
+										<Title color='secondary' textMain='Как мы' textSecondary='чистим мебель?' style={{marginTop: '50px'}}/>
 										<p style={{maxWidth: '860px', margin: '0 auto'}}>Химчистка мягкой мебели в CRYSTAL проводится
 												методом аквачистки. В работе используем только
 												профессиональное оборудование, специализированные моющие средства и пятновыводители. Результат
@@ -69,7 +69,7 @@ const VideoBlock = () => {
 										</div>
 										<Divider variant="middle" sx={{borderWidth: '1px'}}/>
 										<Stack paddingBottom='50px' paddingTop='50px'>
-												<Title color='#0360c0' textMain='Примеры' textSecondary='наших работ'/>
+												<Title color='secondary' textMain='Примеры' textSecondary='наших работ'/>
 												<div className={styles.slider__container}>
 														<Slider {...settings}>
 																<div className={styles.img}>

@@ -4,12 +4,13 @@ import styles from './index.module.css'
 interface IProps {
 		textMain: string,
 		textSecondary: string,
-		color?: string
+		color?: 'primary' | 'secondary',
+		style?: React.CSSProperties
 }
 
-const Title = ({textMain, textSecondary, color = '#fff'}: IProps) => {
+const Title = ({textMain, textSecondary, color = 'primary', style}: IProps) => {
 		return (
-				<h2 className={styles.root} style={{color}}>{textMain} <span>{textSecondary}</span></h2>
+				<h2 className={styles.root} style={{color: color === 'primary' ? '#fff' : '#0360c0', ...style}}>{textMain} <span>{textSecondary}</span></h2>
 		);
 };
 
