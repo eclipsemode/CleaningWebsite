@@ -60,7 +60,7 @@ const Products = () => {
 
 						<CSSTransition nodeRef={nodeRef} in={transition} timeout={300} classNames='products' unmountOnExit
 													 onExited={() => setTransition(true)}>
-								<Container ref={nodeRef}>
+								<Container ref={nodeRef} sx={{paddingBottom: '24px'}}>
 										<Box sx={{flexGrow: 1}} marginTop='40px'>
 												<Grid container spacing={{xs: 2, md: 3}} columns={{xs: 4, sm: 8, md: 12}}
 															justifyContent='center'
@@ -101,10 +101,12 @@ const Products = () => {
 																														marginTop='15px' whiteSpace='nowrap'>
 																										{item.description}
 																								</Typography>
-																								<Typography variant="body2" color="text.secondary" fontSize='14px'
-																														marginTop='15px' style={{color: '#000'}}>
-																										<span style={{fontSize: '24px'}}>{item.price}</span> РУБ.
-																								</Typography>
+																								{item.price && (
+																										<Typography variant="body2" color="text.secondary" fontSize='14px'
+																																marginTop='15px' style={{color: '#000'}}>
+																												<span style={{fontSize: '24px'}}>{item.price}</span> РУБ.
+																										</Typography>
+																								)}
 																						</CardContent>
 																				</CardActionArea>
 																				<CardActions style={{justifyContent: 'center'}}>

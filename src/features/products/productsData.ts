@@ -194,7 +194,7 @@ const productsData = {
     				id: 22,
     				img: UpholsteryImg,
     				name: 'ОБИВКА ИЗ ФЛОКА',
-    				price: '+30% К СТОИМОСТИ ЧИСТКИ',
+						description: '+30% К СТОИМОСТИ ЧИСТКИ',
     		},
     		{
     				id: 23,

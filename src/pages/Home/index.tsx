@@ -4,6 +4,7 @@ import Banner from "../../components/Banner/Banner";
 import UnderBanner from "../../components/UnderBanner";
 import VideoBlock from "../../components/VideoBlock";
 import PriceBlock from "../../components/PriceBlock";
+import HelpBlock from "../../components/HelpBlock";
 
 const Home = () => {
 		return (
@@ -12,6 +13,7 @@ const Home = () => {
 						<UnderBanner/>
 						<VideoBlock/>
 						<PriceBlock/>
+						<HelpBlock/>
 				</main>
 		);
 };

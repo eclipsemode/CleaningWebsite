@@ -6,7 +6,7 @@ interface IProducts {
 		img: string,
 		name: string,
 		description?: string,
-		price: string,
+		price?: string,
 		chip?: string
 }
 
