@@ -1,0 +1,44 @@
+.root {
+    background: #f4f4f4;
+}
+
+.sliderContainer {
+    margin: 50px 29px 0;
+    padding: 0;
+}
+
+.box {
+    background: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+.text {
+    margin: 0;
+}
+
+.name {
+    margin: 0;
+    font-weight: bold;
+}
+
+.city {
+    margin: 0;
+    color: #898989
+}
+
+.sliderContainer::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 18px);
+    width: 36px;
+    height: 36px;
+    background: #0360c0 url("../../assets/images/default/quote.png") no-repeat center;
+}
+
+@media (max-width: 1050px) {
+    .sliderContainer {
+        padding: 0 20px;
+    }
+}

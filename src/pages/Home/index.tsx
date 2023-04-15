@@ -6,6 +6,7 @@ import VideoBlock from "../../components/VideoBlock";
 import PriceBlock from "../../components/PriceBlock";
 import HelpBlock from "../../components/HelpBlock";
 import TeamBlock from "../../components/TeamBlock";
+import ReviewsBlock from "../../components/ReviewsBlock";
 
 const Home = () => {
 		return (
@@ -16,6 +17,7 @@ const Home = () => {
 						<PriceBlock/>
 						<HelpBlock/>
 						<TeamBlock/>
+						<ReviewsBlock/>
 				</main>
 		);
 };
