@@ -7,6 +7,7 @@ import PriceBlock from "../../components/PriceBlock";
 import HelpBlock from "../../components/HelpBlock";
 import TeamBlock from "../../components/TeamBlock";
 import ReviewsBlock from "../../components/ReviewsBlock";
+import QuestionAndAnswerBlock from "../../components/QuestionAndAnswerBlock";
 
 const Home = () => {
 		return (
@@ -18,6 +19,7 @@ const Home = () => {
 						<HelpBlock/>
 						<TeamBlock/>
 						<ReviewsBlock/>
+						<QuestionAndAnswerBlock/>
 				</main>
 		);
 };
