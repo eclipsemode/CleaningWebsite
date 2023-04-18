@@ -3,7 +3,7 @@ import {Button, Fade, Menu, MenuItem} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
 interface IProps {
-		children: {id: number, path: string, name: string}[],
+		children?: {id: number, path: string, name: string}[],
 		title: string,
 }
 
@@ -40,7 +40,7 @@ const MenuButton = ({children, title}: IProps) => {
 								TransitionComponent={Fade}
 						>
 								{
-										children.map(el => (
+										children && children.map(el => (
 												<MenuItem key={el.id} onClick={() => {
 														navigate(el.path)
 														handleCloseEl()

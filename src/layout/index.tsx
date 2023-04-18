@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import {Outlet} from "react-router-dom";
 import {Container} from "@mui/material";
 import TopInfo from "../components/TopInfo";
+import ToTopArrow from "../components/ToTopArrow";
 
 const Layout = () => {
 		return (
@@ -14,6 +15,7 @@ const Layout = () => {
 								<Header/>
 								<Outlet/>
 								<Footer/>
+								<ToTopArrow/>
 						</Container>
 				</>
 		);

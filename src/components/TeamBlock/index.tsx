@@ -4,12 +4,15 @@ import Title from "../../ui/Title";
 import styles from './index.module.css'
 import Master1Img from '../../assets/images/team/dbbc8b6e785ee196db2e0414f51c7447.jpg'
 import Master2Img from '../../assets/images/team/810ef0ef59b47119ea372326acca274f.jpg'
+import { Element } from 'react-scroll'
 
 const TeamBlock = () => {
 		return (
 				<section>
 						<Container>
+								<Element name='komanda'>
 								<Title color='secondary' textMain='команда' textSecondary='мастеров' style={{marginTop: '50px'}}/>
+								</Element>
 								<Stack direction='row' flexWrap='wrap' marginTop='50px' marginBottom='50px' columnGap='100px' rowGap='40px' justifyContent='center'>
 										<Stack spacing={3}>
 												<img className={styles.img} width={254} height={254} src={Master1Img} alt='master'/>

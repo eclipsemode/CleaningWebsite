@@ -7,6 +7,7 @@ import Title from "../../ui/Title";
 import SampleNextArrow from "../../ui/SampleNextArrow";
 import SamplePrevArrow from "../../ui/SamplePrevArrow";
 import Slider from "react-slick";
+import { Element } from 'react-scroll'
 
 const ReviewsBlock = () => {
 		const settings = {
@@ -21,7 +22,9 @@ const ReviewsBlock = () => {
 		return (
 				<section className={styles.root}>
 						<Container sx={{padding: '50px 0', '& .slick-dots': { left: 'calc(50% - 90px)', width: 'auto' }}}>
+								<Element name='otzivy'>
 								<Title color="secondary" textMain='отзывы' textSecondary='клиентов'/>
+								</Element>
 								<Slider {...settings} className={styles.sliderContainer}>
 										<Box className={styles.box}>
 												<Stack justifyContent='center' textAlign='center' padding='50px 10%' spacing={4}>

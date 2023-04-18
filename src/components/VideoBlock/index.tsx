@@ -15,6 +15,7 @@ import Img7 from '../../assets/images/examples/wg3vtkwawozvg2ofd3j84ohcuoir4258.
 import Img8 from '../../assets/images/examples/za187pind7y3q2vsdn5zv66og0me9kpo.jpg'
 import SampleNextArrow from "../../ui/SampleNextArrow";
 import SamplePrevArrow from "../../ui/SamplePrevArrow";
+import { Element } from 'react-scroll'
 
 const VideoBlock = () => {
 		const settings = {
@@ -55,11 +56,13 @@ const VideoBlock = () => {
 				<section className={styles.root}>
 						<Container className={styles.container}>
 								<Stack justifyContent='center' textAlign='center'>
+										<Element name='process'>
 										<Title color='secondary' textMain='Как мы' textSecondary='чистим мебель?' style={{marginTop: '50px'}}/>
 										<p style={{maxWidth: '860px', margin: '0 auto'}}>Химчистка мягкой мебели в CRYSTAL проводится
 												методом аквачистки. В работе используем только
 												профессиональное оборудование, специализированные моющие средства и пятновыводители. Результат
 												нашей работы — не только видимая чистота, а действительно чистый снаружи и внутри диван!</p>
+										</Element>
 										<div className={styles.video}>
 												<iframe
 														width="560" height="315" src="https://www.youtube.com/embed/zexf-r7bwWY"
@@ -69,6 +72,7 @@ const VideoBlock = () => {
 										</div>
 										<Divider variant="middle" sx={{borderWidth: '1px'}}/>
 										<Stack paddingBottom='50px' paddingTop='50px'>
+												<Element name='primeri'>
 												<Title color='secondary' textMain='Примеры' textSecondary='наших работ'/>
 												<div className={styles.slider__container}>
 														<Slider {...settings}>
@@ -98,6 +102,7 @@ const VideoBlock = () => {
 																</div>
 														</Slider>
 												</div>
+												</Element>
 										</Stack>
 								</Stack>
 						</Container>

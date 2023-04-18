@@ -2,6 +2,7 @@ import React from 'react';
 import Title from "../../ui/Title";
 import {Accordion, AccordionDetails, AccordionSummary, Box, Container, Stack, Typography} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Element } from 'react-scroll'
 
 const QuestionAndAnswerBlock = () => {
 		const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -16,7 +17,9 @@ const QuestionAndAnswerBlock = () => {
 				<section>
 						<Container sx={{padding: '50px 0'}}>
 								<Stack spacing={5}>
+										<Element name='voprosy'>
 										<Title color='secondary' textMain='вопросы' textSecondary='и ответы'/>
+										</Element>
 										<Box>
 												<Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
 														<AccordionSummary
