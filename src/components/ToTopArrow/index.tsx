@@ -2,6 +2,7 @@ import React from 'react';
 import {Box} from "@mui/material";
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import {animateScroll as scroll} from "react-scroll/modules";
+import styles from './index.module.css'
 
 const ToTopArrow = () => {
 		const [arrowHidden, setArrowHidden] = React.useState<boolean>(true);
@@ -23,11 +24,7 @@ const ToTopArrow = () => {
 				});
 		}, [isCheckOffset]);
 		return arrowHidden ? null : (
-				<Box sx={{
-						position: 'fixed',
-						bottom: '70px',
-						right: '70px'
-				}}>
+				<Box className={styles.root}>
 						<div onClick={() => scrollToTop()}>
 								<ArrowCircleUpIcon sx={{
 										cursor: 'pointer',

@@ -23,6 +23,7 @@
     border-radius: 2px;
     cursor: pointer;
     color: #fff;
+    box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -33,6 +34,7 @@
 }
 
 .menuLinkMobile {
+    cursor: pointer;
     text-decoration: none;
     color: #000;
     font-size: 17px;

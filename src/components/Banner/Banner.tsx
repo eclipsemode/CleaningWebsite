@@ -13,14 +13,13 @@ const Banner = () => {
 		return (
 				<Container>
 						<section className={styles.root}>
-								<Stack direction='column'>
+								<Stack direction='column' justifyContent='center'>
 										<h1 className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
 										<h2 className={styles.subtitle}>В {city}е</h2>
 										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 2180 чистых
 												диванов</p>
 										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Более 200 отзывов 5 звезд</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Сертифицированные мастера
-												Santoemma</p>
+										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Сертифицированные мастера</p>
 										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия на все услуги</p>
 
 										<Stack direction='row' spacing={5} marginTop='20px'>

@@ -11,8 +11,7 @@
     line-height: 48px;
     text-transform: uppercase;
     color: #0360c0;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin: 5px auto;
     width: max-content;
     max-width: 540px;
 }
