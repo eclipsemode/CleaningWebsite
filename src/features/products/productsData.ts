@@ -118,7 +118,7 @@ const productsData = {
     				id: 11,
     				img: ArmChairImg,
     				name: 'КРЕСЛО',
-    				price: '1000',
+    				price: 'от 700',
     		},
     		{
     				id: 12,
@@ -168,7 +168,7 @@ const productsData = {
     				name: 'МАТРАС 180-200 СМ',
     				description: '2 стороны + торцы',
 						chip: '+ сушка полная',
-    				price: '2800',
+    				price: '3500',
     		},
     		{
     				id: 19,
@@ -188,7 +188,7 @@ const productsData = {
     				id: 21,
     				img: BedImg,
     				name: 'КАРКАС КРОВАТИ',
-    				price: 'от 1000',
+    				price: 'от 1500',
     		},
     		{
     				id: 22,
@@ -217,73 +217,73 @@ const productsData = {
       img: Divan,
       name: 'КОЖАНЫЙ ДИВАН',
       description: '2 посадочных места (до 150 см)',
-      price: '2500'
+      price: 'от 2500'
     },
     {
       id: 26,
       img: DivanTripe,
       name: 'КОЖАНЫЙ ДИВАН',
       description: '3 посадочных места (до 200 см)',
-      price: '3000'
+      price: 'от 3000'
     },
     {
       id: 27,
       img: DivanCorner,
       name: 'УГЛОВОЙ КОЖАНЫЙ ДИВАН',
       description: '2 посадочных места + угол (до 220 см)',
-      price: '4000'
+      price: 'от 4000'
     },
     {
       id: 28,
       img: DivanTripeCorner,
       name: 'УГЛОВОЙ КОЖАНЫЙ ДИВАН',
       description: '3 посадочных места + угол (до 270 см)',
-      price: '5000'
+      price: 'от 5000'
     },
     {
       id: 29,
       img: Pillow,
       name: 'СЪЕМНАЯ КОЖАНАЯ ПОДУШКА',
       description: 'ширина до 30 см',
-      price: '200'
+      price: 'от 200'
     },
     {
       id: 30,
       img: PillowBig,
       name: 'СЪЕМНАЯ КОЖАНАЯ ПОДУШКА',
       description: 'ширина от 30 до 70 см',
-      price: '300',
+      price: 'от 300',
     },
     {
       id: 31,
       img: Sofa,
       name: 'КОЖАНОЕ КРЕСЛО',
       description: 'ширина до 75 см',
-      price: '1500',
+      price: 'от 1500',
     },
     {
       id: 32,
       img: Chair,
       name: 'СТУЛ БЕЗ МЯГКОЙ СПИНКИ',
-      price: '350',
+      price: 'от 200',
     },
     {
       id: 33,
       img: Chair,
       name: 'СТУЛ С МЯГКОЙ СПИНКОЙ',
-      price: '500',
+      price: 'от 300',
     },
     {
       id: 34,
       img: Bench,
       name: 'КОЖАНЫЙ ПУФ',
-      price: '700',
+      price: 'от 700',
     },
     {
       id: 35,
       img: BigChair,
       name: 'КРЕСЛО РУКОВОДИТЕЛЯ',
-      price: '1000',
+      price: 'от 1000',
     },
   ],
   "carpet": [
@@ -292,21 +292,21 @@ const productsData = {
       img: Cover,
       name: 'ЧИСТКА КОВРОЛИНА С КОРОТКИМ ВОРСОМ',
       description: 'Цена за метр',
-      price: 'от 250'
+      price: 'от 200'
     },
     {
       id: 37,
       img: Cover,
-      name: 'ЧИСТКА КОВРОЛИНА С ДЛИННЫМ ВОРСОМ',
+      name: 'ЧИСТКА КОВРОЛИНА СО СРЕДНИМ ВОРСОМ',
       description: 'Цена за метр',
-      price: 'от 350'
+      price: '250'
     },
     {
       id: 38,
       img: Dry,
       name: 'СУШКА КОВРОЛИНА ПОЛНАЯ',
       description: 'Цена за метр',
-      price: 'от 100'
+      price: 'от 50'
     },
     {
       id: 39,

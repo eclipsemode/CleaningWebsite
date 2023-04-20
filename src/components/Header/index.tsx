@@ -88,7 +88,7 @@ const Header = () => {
 														<CallIcon/>
 														<Link color='#000' fontWeight='700' fontSize='18px' href="tel:+79180000000"
 																	underline="none">
-																+7 918 000-00-00
+																+7 (918) 233-01-32
 														</Link>
 												</Stack>
 												<Stack direction='row' alignItems='center'>

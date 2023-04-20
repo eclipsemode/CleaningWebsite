@@ -16,11 +16,10 @@ const Banner = () => {
 								<Stack direction='column' justifyContent='center'>
 										<h1 className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
 										<h2 className={styles.subtitle}>В {city}е</h2>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 2180 чистых
-												диванов</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Более 200 отзывов 5 звезд</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Сертифицированные мастера</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия на все услуги</p>
+										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 3489 единиц почищенной мебели</p>
+										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Биоразлагаемые чистящие средства</p>
+										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия максимального результата</p>
+										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>121 отзыв на 5 звезд</p>
 
 										<Stack direction='row' spacing={5} marginTop='20px'>
 												<Button variant="contained" sx={{maxWidth: '170px', width: '100%'}}>Заказать</Button>

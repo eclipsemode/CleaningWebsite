@@ -58,17 +58,15 @@ const VideoBlock = () => {
 								<Stack justifyContent='center' textAlign='center'>
 										<Element name='process'>
 										<Title color='secondary' textMain='Как мы' textSecondary='чистим мебель?' style={{marginTop: '50px'}}/>
-										<p style={{maxWidth: '860px', margin: '0 auto'}}>Химчистка мягкой мебели в CRYSTAL проводится
-												методом аквачистки. В работе используем только
+										<p style={{maxWidth: '860px', margin: '0 auto'}}>В работе используем только
 												профессиональное оборудование, специализированные моющие средства и пятновыводители. Результат
 												нашей работы — не только видимая чистота, а действительно чистый снаружи и внутри диван!</p>
 										</Element>
 										<div className={styles.video}>
-												<iframe
-														width="560" height="315" src="https://www.youtube.com/embed/zexf-r7bwWY"
-														title="YouTube video player" frameBorder="0"
-														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-														allowFullScreen></iframe>
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/fDy5SZ7YtmI"
+																title="YouTube video player" frameBorder="0"
+																allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+																allowFullScreen></iframe>
 										</div>
 										<Divider variant="middle" sx={{borderWidth: '1px'}}/>
 										<Stack paddingBottom='50px' paddingTop='50px'>
