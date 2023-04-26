@@ -37,3 +37,20 @@
 .bottomTextSecond {
     color: #ff9001;
 }
+
+.img {
+    text-align: center;
+}
+
+.why__top {
+    color: #ff9001;
+    text-align: center;
+    font-size: 18px;
+}
+
+.why__bottom {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    max-width: 325px;
+}

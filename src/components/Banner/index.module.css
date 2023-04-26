@@ -32,6 +32,44 @@
     margin-top: 5px;
 }
 
+.img {
+    overflow: hidden;
+    position: relative;
+}
+
+.img > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.img:hover img {
+    filter: brightness(0.8);
+}
+
+.img > img {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 270px;
+    height: 220px;
+    margin: 0 auto;
+    filter: brightness(0.6);
+}
+
+.bottomSection {
+    padding: 0;
+}
+
+@media (max-width: 1250px) {
+    .bottomSection {
+        padding: 0 20px;
+    }
+}
+
 @media (max-width: 1050px) {
     .img {
         display: none;
