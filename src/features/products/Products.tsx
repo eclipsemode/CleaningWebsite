@@ -35,7 +35,7 @@ const Products = () => {
 												},
 										}}
 								>
-										<ButtonGroup variant="outlined" aria-label="outlined button group">
+										<ButtonGroup orientation={window.innerWidth <= 546 ? "vertical" : 'horizontal'} fullWidth={true} variant="outlined" aria-label="vertical outlined button group">
 												<Button variant={type === 'textile' ? 'contained' : 'outlined'} onClick={() => {
 														if (type !== 'textile') {
 																setTransition(false);
