@@ -4,18 +4,15 @@ import {Button, Container, Stack} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 import BannerImg from '../../assets/images/default/divan-2-3.jpg'
 import YandexImg from '../../assets/images/default/orig.png'
 import {useAppSelector} from "../../app/hooks";
 import SampleNextArrow from "../../ui/SampleNextArrow";
 import SamplePrevArrow from "../../ui/SamplePrevArrow";
-import Img1 from "../../assets/images/additional/lehirtpma16neq0yl357ehcyv7728mbw.jpg";
 import Img2 from "../../assets/images/additional/2.jpg";
-import Img3 from "../../assets/images/additional/Lakirovka-parketa-mini-e1427902783581-360x186.jpg";
 import Img4 from "../../assets/images/additional/moem-okna-2.jpg";
-import Img5 from "../../assets/images/additional/909550134-1920w.jpg";
+import Img5 from "../../assets/images/additional/rent.jpg";
+import Img6 from "../../assets/images/additional/kovrolin.jpg";
 import Slider from "react-slick";
 
 const Banner = () => {
@@ -30,8 +27,6 @@ const Banner = () => {
 				nextArrow: <SampleNextArrow/>,
 				prevArrow: <SamplePrevArrow/>,
 				adaptiveHeight: true,
-				// width: '270px',
-				// height: '220px',
 				responsive: [
 						{
 								breakpoint: 1165,
@@ -79,24 +74,20 @@ const Banner = () => {
 						<section className={styles.bottomSection}>
 								<Slider {...settings}>
 										<div className={styles.img}>
-												<img src={Img1} alt="expample"/>
-												<span>Чистим шторы без снятия и глажки</span>
+												<img src={Img6} alt="expample"/>
+												<span>Делаем чистку ковролина</span>
 										</div>
 										<div className={styles.img}>
 												<img src={Img2} alt="expample"/>
 												<span>Делаем химчистку автомобилей</span>
 										</div>
 										<div className={styles.img}>
-												<img src={Img3} alt="expample"/>
-												<span>Чистим полы и напольные покрытия</span>
+												<img src={Img5} alt="expample"/>
+												<span>Сдаем в прокат оборудование для уборки</span>
 										</div>
 										<div className={styles.img}>
 												<img src={Img4} alt="expample"/>
 												<span>Моем окна</span>
-										</div>
-										<div className={styles.img}>
-												<img src={Img5} alt="expample"/>
-												<span>Делаем уборку в домах и квартирах</span>
 										</div>
 								</Slider>
 						</section>

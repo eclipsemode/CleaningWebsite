@@ -6,11 +6,12 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import {Link} from "react-router-dom";
 import styles from './index.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 import {CSSTransition} from 'react-transition-group';
 import './MobileMenuTransitionGroup.css'
+import WhatsApp from "../../assets/images/social/WhatsApp.png";
+import vkApp from "../../assets/images/social/VK.png";
+import {Link as LinkMUI} from "@mui/material";
 
 const TopInfo = () => {
 		const {city} = useAppSelector(state => state.location)
@@ -57,10 +58,10 @@ const TopInfo = () => {
 						</Stack>
 						<Stack justifyContent='center' alignItems='center' direction='row' width='100%' style={{position: 'absolute', bottom: '0', background: '#f5f5f5', height: '58px'}}>
 								<div style={{width: '100%', display: 'flex', justifyContent: 'center', cursor: 'pointer'}}>
-										<InstagramIcon/>
+									<LinkMUI href='https://wa.me/79182330132' target='_blank'><img src={WhatsApp} width={24} alt="wahtsapp"/></LinkMUI>
 								</div>
 								<div style={{width: '100%', display: 'flex', justifyContent: 'center', cursor: 'pointer'}}>
-										<YouTubeIcon/>
+									<LinkMUI href='https://vk.com/crystal_divan' target='_blank'><img src={vkApp} width={24} alt="vk"/></LinkMUI>
 								</div>
 						</Stack>
 				</Stack>

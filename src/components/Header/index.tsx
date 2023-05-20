@@ -2,14 +2,12 @@ import React from 'react';
 import styles from './index.module.css'
 import Logo from '../../assets/images/logo.png'
 import {Button, Container, Link, Stack} from "@mui/material";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import TelegramIcon from '@mui/icons-material/Telegram';
 import CallIcon from '@mui/icons-material/Call';
 import {useNavigate} from "react-router-dom";
 import RouterService from "../../services/RouterService";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
+import WhatsApp from '../../assets/images/social/WhatsApp.png'
+import vkApp from '../../assets/images/social/VK.png'
 
 const Header = () => {
 		const navigate = useNavigate();
@@ -32,11 +30,6 @@ const Header = () => {
 														<Button style={{color: '#898989'}} variant="text">Оборудование</Button>
 														<Button style={{color: '#898989'}} variant="text">Сертификаты</Button>
 														<Button style={{color: '#898989'}} variant="text" onClick={() => scroll.scrollToBottom()}>Контакты</Button>
-												</Stack>
-
-												<Stack direction='row' columnGap={1}>
-														<InstagramIcon/>
-														<YouTubeIcon/>
 												</Stack>
 										</Stack>
 
@@ -86,14 +79,15 @@ const Header = () => {
 										<Stack direction='row' alignItems='center' columnGap={5}>
 												<Stack direction='row' alignItems='center'>
 														<CallIcon/>
-														<Link color='#000' fontWeight='700' fontSize='18px' href="tel:+79180000000"
+														<Link color='#000' fontWeight='700' fontSize='18px' href="tel:+79182330132"
 																	underline="none">
 																+7 (918) 233-01-32
 														</Link>
 												</Stack>
-												<Stack direction='row' alignItems='center'>
-														<WhatsAppIcon/>
-														<TelegramIcon/>
+												<Stack direction='row' columnGap='10px' alignItems='center'>
+													<Link href='https://wa.me/79182330132' target='_blank'><img src={WhatsApp} width={24} alt="wahtsapp"/></Link>
+													<Link href='https://vk.com/crystal_divan' target='_blank'><img src={vkApp} width={24} alt="vk"/></Link>
+
 												</Stack>
 										</Stack>
 

@@ -2,9 +2,10 @@ import React from 'react';
 import {Container, Stack} from "@mui/material";
 import Title from "../../ui/Title";
 import styles from './index.module.css'
-import Master1Img from '../../assets/images/team/dbbc8b6e785ee196db2e0414f51c7447.jpg'
-import Master2Img from '../../assets/images/team/810ef0ef59b47119ea372326acca274f.jpg'
 import { Element } from 'react-scroll'
+
+const master1Img: string = '/img/master1.jpg'
+const master2Img: string = '/img/master2.jpg'
 
 const TeamBlock = () => {
 		return (
@@ -15,20 +16,20 @@ const TeamBlock = () => {
 								</Element>
 								<Stack direction='row' flexWrap='wrap' marginTop='50px' marginBottom='50px' columnGap='100px' rowGap='40px' justifyContent='center'>
 										<Stack spacing={3}>
-												<img className={styles.img} width={254} height={254} src={Master1Img} alt='master'/>
+												<img className={styles.img} width={254} height={254} src={master1Img} alt='master'/>
 												<Stack spacing={1}>
-												<h3 className={styles.name}><span>Иван</span> Иванов</h3>
-												<p className={styles.role}>Менеджер консультант</p>
-												<p className={styles.experience}>Опыт работы 2 года</p>
+												<h3 className={styles.name}><span>Игорь</span> Мухатаев</h3>
+												<p className={styles.role}>Старший мастер по химчистке</p>
+												<p className={styles.experience}>Опыт работы 4 года</p>
 												</Stack>
 										</Stack>
 
 										<Stack spacing={3}>
-												<img className={styles.img} width={254} height={254} src={Master2Img} alt='master'/>
+												<img className={styles.img} width={254} height={254} src={master2Img} alt='master'/>
 												<Stack spacing={1}>
-														<h3 className={styles.name}><span>Иван</span> Иванов</h3>
-														<p className={styles.role}>Менеджер консультант</p>
-														<p className={styles.experience}>Опыт работы 2 года</p>
+														<h3 className={styles.name}><span>Данил</span> Комнин</h3>
+														<p className={styles.role}>Мастер по химчистке</p>
+														<p className={styles.experience}>Опыт работы 1 года</p>
 												</Stack>
 										</Stack>
 								</Stack>

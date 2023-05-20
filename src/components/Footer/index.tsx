@@ -7,10 +7,10 @@ import {useAppSelector} from "../../app/hooks";
 import {Link} from "react-router-dom";
 import RouterService from "../../services/RouterService";
 import CallIcon from '@mui/icons-material/Call';
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import WhatsApp from "../../assets/images/social/WhatsApp.png";
+import vkApp from "../../assets/images/social/VK.png";
 
 const Footer = () => {
 		const {city} = useAppSelector(state => state.location)
@@ -70,12 +70,12 @@ const Footer = () => {
 										<Stack spacing={2}>
 												<Stack direction='row' alignItems='center' spacing={1}>
 													<CallIcon style={{color: '#fff'}}/>
-														<LinkMUI href="#" style={{color: '#fff'}} underline="none">
-																+7 (918) 000-00-00
+														<LinkMUI href="tel:+79182330132" style={{color: '#fff'}} underline="none">
+															+7 (918) 233-01-32
 														</LinkMUI>
-														<Stack direction='row'>
-																<WhatsAppIcon style={{color: '#fff'}}/>
-																<TelegramIcon style={{color: '#fff'}}/>
+														<Stack direction='row' columnGap='10px'>
+															<LinkMUI href='https://wa.me/79182330132' target='_blank'><img src={WhatsApp} width={24} alt="wahtsapp"/></LinkMUI>
+															<LinkMUI href='https://vk.com/crystal_divan' target='_blank'><img src={vkApp} width={24} alt="vk"/></LinkMUI>
 														</Stack>
 												</Stack>
 												<Button variant={"contained"}>Заказать звонок</Button>
