@@ -45,7 +45,7 @@ const productsData = {
     				img: DivanImg,
     				name: 'Диван',
     				description: '2 посадочных места (до 150 см)',
-    				price: '2000',
+    				price: 'от 2000',
     				chip: '+ сушка 40 минут'
     		},
     		{
@@ -53,7 +53,7 @@ const productsData = {
     				img: DivanDoubleImg,
     				name: 'Диван',
     				description: '3 посадочных места (до 250 см)',
-    				price: '2400',
+    				price: 'от 2400',
     				chip: '+ сушка 40 минут'
     		},
     		{
@@ -61,7 +61,7 @@ const productsData = {
     				img: DivanCornerImg,
     				name: 'СТАНДАРТНЫЙ УГЛОВОЙ ДИВАН',
     				description: '2 посадочных места + угол (до 220 см)',
-    				price: '3000',
+    				price: 'от 3000',
     				chip: '+ сушка 40 минут'
     		},
     		{
@@ -69,7 +69,7 @@ const productsData = {
     				img: DivanCornerBigImg,
     				name: 'БОЛЬШОЙ УГЛОВОЙ ДИВАН',
     				description: '3 посадочных места + угол (до 270 см)',
-    				price: '3500',
+    				price: 'от 3500',
     				chip: '+ сушка 40 минут'
     		},
     		{
@@ -85,34 +85,34 @@ const productsData = {
     				img: PillowImg,
     				name: 'СЪЕМНАЯ ПОДУШКА',
     				description: 'ширина до 30 см',
-    				price: '100',
+    				price: 'от 100',
     		},
     		{
     				id: 7,
     				img: PillowBigImg,
     				name: 'СЪЕМНАЯ ПОДУШКА',
     				description: 'ширина от 30 до 70 см',
-    				price: '200',
+    				price: 'от 200',
     		},
     		{
     				id: 8,
     				img: PillowNewImg,
     				name: 'СЪЕМНАЯ ПОДУШКА',
     				description: 'от 70 см',
-    				price: '300',
+    				price: 'от 300',
     		},
     		{
     				id: 9,
     				img: KitchenCornerImg,
     				name: 'КУХОННЫЙ УГОЛОК',
     				description: 'размеры до 110x150 см, неразборный',
-    				price: '1500',
+    				price: 'от 1500',
     		},
     		{
     				id: 10,
     				img: ChairImg,
     				name: 'СТУЛ БЕЗ МЯГКОЙ СПИНКИ',
-    				price: '250',
+    				price: 'от 250',
     		},
     		{
     				id: 11,
@@ -124,7 +124,7 @@ const productsData = {
     				id: 12,
     				img: ChairAnotherImg,
     				name: 'СТУЛ С МЯГКОЙ СПИНКОЙ',
-    				price: '400',
+    				price: 'от 400',
     		},
     		{
     				id: 13,
@@ -144,7 +144,7 @@ const productsData = {
     				name: 'МАТРАС ДЕТСКИЙ',
     				description: '2 стороны + торцы',
 						chip: '+ сушка полная',
-    				price: '1000',
+    				price: 'от 1000',
     		},
     		{
     				id: 16,
@@ -152,7 +152,7 @@ const productsData = {
     				name: 'МАТРАС 80-90 СМ',
     				description: '2 стороны + торцы',
 						chip: '+ сушка полная',
-    				price: '1500',
+    				price: 'от 1500',
     		},
     		{
     				id: 17,
@@ -168,7 +168,7 @@ const productsData = {
     				name: 'МАТРАС 180-200 СМ',
     				description: '2 стороны + торцы',
 						chip: '+ сушка полная',
-    				price: '3500',
+    				price: 'от 3500',
     		},
     		{
     				id: 19,
@@ -176,7 +176,7 @@ const productsData = {
     				name: 'ОТБЕЛИВАНИЕ МАТРАСА',
     				description: 'Одна сторона',
 						chip: '+ сушка полная',
-    				price: '500',
+    				price: 'от 500',
     		},
     		{
     				id: 20,
@@ -201,14 +201,14 @@ const productsData = {
     				img: NeutralImg,
     				name: 'НЕЙТРАЛИЗАЦИЯ ЗАПАХА',
     				description: 'однократно',
-    				price: '500',
+    				price: 'от 500',
     		},
     		{
     				id: 24,
     				img: NeutralImg,
     				name: 'НЕЙТРАЛИЗАЦИЯ ЗАПАХА',
     				description: 'с гарантией',
-    				price: '1000',
+    				price: 'от 1000',
     		}
   ],
   "leather": [
@@ -299,7 +299,7 @@ const productsData = {
       img: Cover,
       name: 'ЧИСТКА КОВРОЛИНА СО СРЕДНИМ ВОРСОМ',
       description: 'Цена за метр',
-      price: '250'
+      price: 'от 250'
     },
     {
       id: 38,
@@ -313,14 +313,14 @@ const productsData = {
       img: Nose,
       name: 'НЕЙТРАЛИЗАЦИЯ ЗАПАХА',
       description: 'однократно',
-      price: '500'
+      price: 'от 500'
     },
     {
       id: 40,
       img: Nose,
       name: 'НЕЙТРАЛИЗАЦИЯ ЗАПАХА',
       description: 'с гарантией',
-      price: '1000'
+      price: 'от 1000'
     },
   ]
 }
