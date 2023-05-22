@@ -39,7 +39,7 @@ const TopInfo = () => {
 				<Stack ref={nodeRef}
 							 style={{
 						width: '100%',
-						height: '50%',
+						height: '500px',
 						background: '#fff',
 						position: 'fixed',
 						top: '0',
