@@ -48,7 +48,7 @@ const TopInfo = () => {
 						zIndex: '100',
 				}}
 							 justifyContent='center' alignItems='center'>
-						<Stack alignItems='center' spacing={2}>
+						<Stack alignItems='center' spacing={2} sx={{padding: '20px 0'}}>
 								<Link className={styles.menuLinkMobile} to="process" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Процесс</Button></Link>
 								<Link className={styles.menuLinkMobile} to="primeri" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Примеры</Button></Link>
 								<Link className={styles.menuLinkMobile} to="ceny" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Цены</Button></Link>
