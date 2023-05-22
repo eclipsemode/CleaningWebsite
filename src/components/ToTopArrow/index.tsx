@@ -1,5 +1,6 @@
-import React from 'react';
+"use client"
 import {Box} from "@mui/material";
+import React from "react";
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 import {animateScroll as scroll} from "react-scroll/modules";
 import styles from './index.module.css'

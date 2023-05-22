@@ -1,6 +1,7 @@
 .img {
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: none;
+    object-position: top;
 }
 
 .name, .role, .experience {

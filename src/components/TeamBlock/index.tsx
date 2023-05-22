@@ -3,9 +3,9 @@ import {Container, Stack} from "@mui/material";
 import Title from "../../ui/Title";
 import styles from './index.module.css'
 import { Element } from 'react-scroll'
-
-const master1Img: string = '/img/master1.jpg'
-const master2Img: string = '/img/master2.jpg'
+import Master1Img from '@public/images/master/master1.jpg'
+import Master2Img from '@public/images/master/master2.jpg'
+import Image from "next/image";
 
 const TeamBlock = () => {
 		return (
@@ -16,7 +16,7 @@ const TeamBlock = () => {
 								</Element>
 								<Stack direction='row' flexWrap='wrap' marginTop='50px' marginBottom='50px' columnGap='100px' rowGap='40px' justifyContent='center'>
 										<Stack spacing={3}>
-												<img className={styles.img} width={254} height={254} src={master1Img} alt='master'/>
+												<Image priority={false} className={styles.img} width={254} height={254} src={Master1Img} alt='master'/>
 												<Stack spacing={1}>
 												<h3 className={styles.name}><span>Игорь</span> Мухатаев</h3>
 												<p className={styles.role}>Старший мастер по химчистке</p>
@@ -25,7 +25,8 @@ const TeamBlock = () => {
 										</Stack>
 
 										<Stack spacing={3}>
-												<img className={styles.img} width={254} height={254} src={master2Img} alt='master'/>
+											<Image priority={false} className={styles.img} width={254} height={254} src={Master2Img} alt='master'/>
+
 												<Stack spacing={1}>
 														<h3 className={styles.name}><span>Данил</span> Комнин</h3>
 														<p className={styles.role}>Мастер по химчистке</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Fade, Menu, MenuItem} from "@mui/material";
-import {useNavigate} from "react-router-dom";
+import {useRouter} from "next/router";
 
 interface IProps {
 		children?: {id: number, path: string, name: string}[],
@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const MenuButton = ({children, title}: IProps) => {
-		const navigate = useNavigate();
+		const router = useRouter();
 		const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 		const open = Boolean(anchorEl);
 		const handleClickEl = (event: React.MouseEvent<HTMLElement>) => {
@@ -42,7 +42,7 @@ const MenuButton = ({children, title}: IProps) => {
 								{
 										children && children.map(el => (
 												<MenuItem key={el.id} onClick={() => {
-														navigate(el.path)
+														router.push(el.path)
 														handleCloseEl()
 												}
 												}>{el.name}</MenuItem>

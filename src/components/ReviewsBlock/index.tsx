@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './index.module.css'
 import {Box, Container, Stack} from "@mui/material";
-import Title from "../../ui/Title";
-import SampleNextArrow from "../../ui/SampleNextArrow";
-import SamplePrevArrow from "../../ui/SamplePrevArrow";
+import Title from "@ui/Title";
+import SampleNextArrow from "@ui/SampleNextArrow";
+import SamplePrevArrow from "@ui/SamplePrevArrow";
 import Slider from "react-slick";
 import { Element } from 'react-scroll'
 

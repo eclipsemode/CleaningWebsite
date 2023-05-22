@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './index.module.css'
 import {Container} from "@mui/material";
-import Title from "../../ui/Title";
-import Products from "../../features/products/Products";
+import Title from "@ui/Title";
+import Products from "@store/features/products/Products";
 import { Element } from 'react-scroll'
 
 

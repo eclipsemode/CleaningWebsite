@@ -1,17 +1,18 @@
+"use client"
 import React from 'react';
 import {Box, Button, Container, Stack} from "@mui/material";
 import InfoIcon from '@mui/icons-material/Info';
-import {useAppSelector} from "../../app/hooks";
+import {useAppSelector} from "@store/hooks";
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import {Link} from "react-router-dom";
 import styles from './index.module.css'
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import {CSSTransition} from 'react-transition-group';
 import './MobileMenuTransitionGroup.css'
-import WhatsApp from "../../assets/images/social/WhatsApp.png";
-import vkApp from "../../assets/images/social/VK.png";
+import WhatsApp from "@public/images/social/WhatsApp.png";
+import vkApp from "@public/images/social/VK.png";
 import {Link as LinkMUI} from "@mui/material";
+import Image from "next/image";
 
 const TopInfo = () => {
 		const {city} = useAppSelector(state => state.location)
@@ -48,20 +49,20 @@ const TopInfo = () => {
 				}}
 							 justifyContent='center' alignItems='center'>
 						<Stack alignItems='center' spacing={2}>
-								<ScrollLink className={styles.menuLinkMobile} to="process" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Процесс</Button></ScrollLink>
-								<ScrollLink className={styles.menuLinkMobile} to="primeri" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Примеры</Button></ScrollLink>
-								<ScrollLink className={styles.menuLinkMobile} to="ceny" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Цены</Button></ScrollLink>
-								<ScrollLink className={styles.menuLinkMobile} to="komanda" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Команда</Button></ScrollLink>
-								<ScrollLink className={styles.menuLinkMobile} to="otzivy" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Отзывы</Button></ScrollLink>
-								<ScrollLink className={styles.menuLinkMobile} to="voprosy" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Вопросы</Button></ScrollLink>
+								<Link className={styles.menuLinkMobile} to="process" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Процесс</Button></Link>
+								<Link className={styles.menuLinkMobile} to="primeri" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Примеры</Button></Link>
+								<Link className={styles.menuLinkMobile} to="ceny" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Цены</Button></Link>
+								<Link className={styles.menuLinkMobile} to="komanda" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Команда</Button></Link>
+								<Link className={styles.menuLinkMobile} to="otzivy" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Отзывы</Button></Link>
+								<Link className={styles.menuLinkMobile} to="voprosy" spy={true} smooth={true} duration={500} onClick={() => setOpened(false)}><Button>Вопросы</Button></Link>
 								<Button className={styles.menuLinkMobile} onClick={() => {scroll.scrollToBottom(); setOpened(false)}}>Контакты</Button>
 						</Stack>
 						<Stack justifyContent='center' alignItems='center' direction='row' width='100%' style={{position: 'absolute', bottom: '0', background: '#f5f5f5', height: '58px'}}>
 								<div style={{width: '100%', display: 'flex', justifyContent: 'center', cursor: 'pointer'}}>
-									<LinkMUI href='https://wa.me/79182330132' target='_blank'><img src={WhatsApp} width={24} alt="wahtsapp"/></LinkMUI>
+									<LinkMUI href='https://wa.me/79182330132' target='_blank'><Image src={WhatsApp} width={24} alt="wahtsapp"/></LinkMUI>
 								</div>
 								<div style={{width: '100%', display: 'flex', justifyContent: 'center', cursor: 'pointer'}}>
-									<LinkMUI href='https://vk.com/crystal_divan' target='_blank'><img src={vkApp} width={24} alt="vk"/></LinkMUI>
+									<LinkMUI href='https://vk.com/crystal_divan' target='_blank'><Image src={vkApp} width={24} alt="vk"/></LinkMUI>
 								</div>
 						</Stack>
 				</Stack>
@@ -77,7 +78,7 @@ const TopInfo = () => {
 										</Stack>
 
 										<Stack direction='row' alignItems='center' columnGap={1}>
-												<Link to="/" className={styles.link}>{city}</Link>
+												<LinkMUI href="#" className={styles.link}>{city}</LinkMUI>
 												<FiberManualRecordIcon sx={{fontSize: '10px', color: '#fff'}}/>
 												<p style={{margin: '0', color: '#fff'}}>Есть свободный мастер</p>
 										</Stack>

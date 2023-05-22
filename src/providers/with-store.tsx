@@ -1,16 +1,19 @@
+"use client"
 import {Provider} from "react-redux";
-import {store} from "../app/store";
+import {store} from "@store/store";
 import React from "react";
 
-const withStore = (component: () => React.ReactNode) => () => {
-		return (
-				<React.StrictMode>
-						<Provider store={store}>
-										{component()}
-						</Provider>
-				</React.StrictMode>
-		)
+interface IProps {
+    children: React.ReactNode
+}
+
+const WithStore = ({children}: IProps) => {
+    return (
+        <Provider store={store}>
+            {children}
+        </Provider>
+    )
 }
 
 
-export default withStore;
+export default WithStore;

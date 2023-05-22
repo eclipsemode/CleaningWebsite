@@ -3,19 +3,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './index.module.css'
 import {Container, Divider, Stack} from "@mui/material";
-import Title from "../../ui/Title";
+import Title from "@ui/Title";
 import Slider from "react-slick";
-import Img1 from '../../assets/images/examples/b5iamlfvd2h9e7o2mv2q01i1nkatecyo.jpg'
-import Img2 from '../../assets/images/examples/g33dfoe0ykv440rnk1htvrnk0z04yjl5.jpg'
-import Img3 from '../../assets/images/examples/ka8c06g0saxke4exgeauwnqhogvfvjzj.jpg'
-import Img4 from '../../assets/images/examples/l19yxqf3vq5qv3lvquhhte7nkj681cjv.jpg'
-import Img5 from '../../assets/images/examples/mdlv4hvko850qx3aj5a9fm8nymxhrc2p.jpg'
-import Img6 from '../../assets/images/examples/qsdjvedac2ajhomamrl4asvvfqyd0zdp.jpg'
-import Img7 from '../../assets/images/examples/wg3vtkwawozvg2ofd3j84ohcuoir4258.jpg'
-import Img8 from '../../assets/images/examples/za187pind7y3q2vsdn5zv66og0me9kpo.jpg'
-import SampleNextArrow from "../../ui/SampleNextArrow";
-import SamplePrevArrow from "../../ui/SamplePrevArrow";
+import Img1 from '@public/images/examples/b5iamlfvd2h9e7o2mv2q01i1nkatecyo.jpg'
+import Img2 from '@public/images/examples/g33dfoe0ykv440rnk1htvrnk0z04yjl5.jpg'
+import Img3 from '@public/images/examples/ka8c06g0saxke4exgeauwnqhogvfvjzj.jpg'
+import Img4 from '@public/images/examples/l19yxqf3vq5qv3lvquhhte7nkj681cjv.jpg'
+import Img5 from '@public/images/examples/mdlv4hvko850qx3aj5a9fm8nymxhrc2p.jpg'
+import Img6 from '@public/images/examples/qsdjvedac2ajhomamrl4asvvfqyd0zdp.jpg'
+import Img7 from '@public/images/examples/wg3vtkwawozvg2ofd3j84ohcuoir4258.jpg'
+import Img8 from '@public/images/examples/za187pind7y3q2vsdn5zv66og0me9kpo.jpg'
+import SampleNextArrow from "@ui/SampleNextArrow";
+import SamplePrevArrow from "@ui/SamplePrevArrow";
 import { Element } from 'react-scroll'
+import Image from "next/image";
 
 const VideoBlock = () => {
 		const settings = {
@@ -73,28 +74,28 @@ const VideoBlock = () => {
 												<div className={styles.slider__container}>
 														<Slider {...settings}>
 																<div className={styles.img}>
-																		<img src={Img1} alt="expample"/>
+																		<Image src={Img1} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img2} alt="expample"/>
+																		<Image src={Img2} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img3} alt="expample"/>
+																		<Image src={Img3} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img4} alt="expample"/>
+																		<Image src={Img4} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img5} alt="expample"/>
+																		<Image src={Img5} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img6} alt="expample"/>
+																		<Image src={Img6} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img7} alt="expample"/>
+																		<Image src={Img7} alt="expample"/>
 																</div>
 																<div className={styles.img}>
-																		<img src={Img8} alt="expample"/>
+																		<Image src={Img8} alt="expample"/>
 																</div>
 														</Slider>
 												</div>
