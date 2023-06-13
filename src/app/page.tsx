@@ -23,6 +23,7 @@ export default function Home() {
                   content="Химчистка мебели в Армавире, аренда оборудования для уборки, химчистка салона авто"
                   key="desc"
               />
+              <link rel="shortcut icon" href="/favicon.ico" />
           </Head>
           <Banner/>
           <UnderBanner/>
