@@ -11,7 +11,19 @@ const inter = Inter({subsets: ['cyrillic']})
 
 export const metadata = {
     title: 'Химчистка мебели в Армавире',
-    description: 'Химчистка мебели в Армавире, аренда оборудования для уборки',
+    description: 'Химчистка мебели в Армавире, аренда оборудования для уборки, химчистка салона авто',
+    referrer: 'origin-when-cross-origin',
+    colorScheme: 'light',
+    keywords: ['химчистка мебели', 'Армавир', 'уборка', 'химчистка авто', 'чистка ковров'],
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
+        apple: '/favicon.ico',
+    },
+    verification: {
+        google: 'google',
+        yandex: 'yandex'
+    },
 }
 
 function RootLayout({

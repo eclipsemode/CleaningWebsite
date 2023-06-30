@@ -55,14 +55,14 @@ const Banner = () => {
 		return (
 				<Container>
 						<Stack spacing={4}>
-						<section className={styles.root}>
+						<section itemScope itemType="http://schema.org/BreadcrumbList" className={styles.root}>
 								<Stack direction='column' justifyContent='center'>
-										<h1 className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
-										<h2 className={styles.subtitle}>В {city}е</h2>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 3489 единиц почищенной мебели</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Биоразлагаемые чистящие средства</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия максимального результата</p>
-										<p className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>121 отзыв на 5 звезд</p>
+										<h1 itemProp="name" className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
+										<h2 itemProp="addressLocality" className={styles.subtitle}>В {city}е</h2>
+										<li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 3489 единиц почищенной мебели</li>
+										<li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Биоразлагаемые чистящие средства</li>
+										<li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия максимального результата</li>
+										<li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem" className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>121 отзыв на 5 звезд</li>
 
 										<Stack direction='row' spacing={5} marginTop='20px'>
 											<Link href='tel:+79182330132'><Button variant="contained" sx={{maxWidth: '170px', width: '100%'}}>Заказать</Button></Link>
@@ -76,21 +76,21 @@ const Banner = () => {
 
 						<section className={styles.bottomSection}>
 								<Slider {...settings}>
-										<div className={styles.img}>
-												<Image src={Img6} alt="expample"/>
-												<span>Делаем чистку ковролина</span>
+										<div itemProp="offers" itemScope itemType="https://schema.org/ImageObject" className={styles.img}>
+												<Image itemProp="contentUrl" src={Img6} alt="expample"/>
+												<span itemProp="description">Делаем чистку ковролина</span>
 										</div>
-										<div className={styles.img}>
-												<Image src={Img2} alt="expample"/>
-												<span>Делаем химчистку автомобилей</span>
+										<div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+												<Image itemProp="contentUrl" src={Img2} alt="expample"/>
+												<span itemProp="description">Делаем химчистку автомобилей</span>
 										</div>
-										<div className={styles.img}>
-												<Image src={Img5} alt="expample"/>
-												<span>Сдаем в прокат оборудование для уборки</span>
+										<div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+												<Image itemProp="contentUrl" src={Img5} alt="expample"/>
+												<span itemProp="description">Сдаем в прокат оборудование для уборки</span>
 										</div>
-										<div className={styles.img}>
-												<Image src={Img4} alt="expample"/>
-												<span>Моем окна</span>
+										<div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+												<Image itemProp="contentUrl" src={Img4} alt="expample"/>
+												<span itemProp="description">Моем окна</span>
 										</div>
 								</Slider>
 						</section>

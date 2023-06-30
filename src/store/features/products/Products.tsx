@@ -105,7 +105,7 @@ const Products = () => {
                               gridAutoFlow={'row'}>
                             {(type === 'textile' ? textile : type === 'leather' ? leather : type === 'carpet' ? carpet : []).map((item) => (
                                 <Grid item xs={4} sm={4} md={4} key={item.id} style={{minWidth: '345px'}}>
-                                    <Card sx={{
+                                    <Card itemScope itemType="https://schema.org/Product" sx={{
                                         height: '100%',
                                         display: 'flex',
                                         flexDirection: 'column',
@@ -122,28 +122,30 @@ const Products = () => {
                                             color: '#fff'
                                         }} label={item.chip}/>}
                                         <CardActionArea>
-                                            <Image src={item.img} alt='product'
+                                            <Image itemProp="image" src={item.img} alt='product'
                                                    style={{width: '100%', height: '200px', objectFit: 'contain'}}/>
                                             <CardContent style={{textAlign: 'center'}}>
-                                                <Typography gutterBottom variant="h5" component="div"
+                                                <Typography itemProp="name" gutterBottom variant="h5" component="div"
                                                             whiteSpace='nowrap'
                                                             fontSize='14px' textTransform='uppercase'>
                                                     {item.name}
                                                 </Typography>
-                                                <Typography variant="body2" color="text.secondary" fontSize='14px'
+                                                <Typography itemProp="description" variant="body2" color="text.secondary" fontSize='14px'
                                                             marginTop='15px' whiteSpace='nowrap'>
                                                     {item.description}
                                                 </Typography>
+                                                <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                 {item.price && (
                                                     <Typography variant="body2" color="text.secondary" fontSize='14px'
                                                                 marginTop='15px' style={{color: '#000'}}>
-                                                        <span style={{fontSize: '24px'}}>{item.price}</span> РУБ.
+                                                        <span itemProp="price" style={{fontSize: '24px'}}><meta itemProp="priceCurrency" content="RUB"/>{item.price}</span> РУБ.
                                                     </Typography>
                                                 )}
+                                                </div>
                                             </CardContent>
                                         </CardActionArea>
                                         <CardActions style={{justifyContent: 'center'}}>
-                                            <Link href='tel:+79182330132'><Button size="small" color="primary">
+                                            <Link itemProp="url" href='tel:+79182330132'><Button size="small" color="primary">
                                                 Заказать
                                             </Button>
                                             </Link>
