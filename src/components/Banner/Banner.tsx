@@ -53,7 +53,7 @@ const Banner = () => {
                 <section className={styles.bottomSection}>
                     <SliderSlick>
                         <>
-                            <div itemProp="offers" itemScope itemType="https://schema.org/ImageObject"
+                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer"
                                  className={styles.img}>
                                 <Image src={Img6} alt="expample"/>
                                 <span itemProp="description">Делаем чистку ковролина</span>
