@@ -53,22 +53,22 @@ const Banner = () => {
                 <section className={styles.bottomSection}>
                     <SliderSlick>
                         <>
-                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer"
+                            <div itemScope itemType="https://schema.org/Service"
                                  className={styles.img}>
-                                <Image src={Img6} alt="expample"/>
-                                <span itemProp="description">Делаем чистку ковролина</span>
+                                <Image itemProp='image' src={Img6} alt="expample"/>
+                                <span itemProp="name">Делаем чистку ковролина</span>
                             </div>
-                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+                            <div itemScope itemType="https://schema.org/Service" className={styles.img}>
                                 <Image src={Img2} alt="expample"/>
-                                <span itemProp="description">Делаем химчистку автомобилей</span>
+                                <span itemProp="name">Делаем химчистку автомобилей</span>
                             </div>
-                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+                            <div itemScope itemType="https://schema.org/Service" className={styles.img}>
                                 <Image src={Img5} alt="expample"/>
-                                <span itemProp="description">Сдаем в прокат оборудование для уборки</span>
+                                <span itemProp="name">Сдаем в прокат оборудование для уборки</span>
                             </div>
-                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
+                            <div itemScope itemType="https://schema.org/Service" className={styles.img}>
                                 <Image src={Img4} alt="expample"/>
-                                <span itemProp="description">Моем окна</span>
+                                <span itemProp="name">Моем окна</span>
                             </div>
                         </>
                     </SliderSlick>
