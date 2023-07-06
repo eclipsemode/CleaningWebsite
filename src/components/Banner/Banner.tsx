@@ -20,7 +20,7 @@ const Banner = () => {
                 <section itemScope itemType="http://schema.org/BreadcrumbList" className={styles.root}>
                     <Stack direction='column' justifyContent='center'>
                         <h1 itemProp="name" className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
-                        <h2 itemProp="addressLocality" className={styles.subtitle}>В Армавире</h2>
+                        <h2 itemProp="itemListElement" className={styles.subtitle}>В Армавире</h2>
                         <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                             className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 3489 единиц
                             почищенной мебели
@@ -55,19 +55,19 @@ const Banner = () => {
                         <>
                             <div itemProp="offers" itemScope itemType="https://schema.org/ImageObject"
                                  className={styles.img}>
-                                <Image itemProp="contentUrl" src={Img6} alt="expample"/>
+                                <Image src={Img6} alt="expample"/>
                                 <span itemProp="description">Делаем чистку ковролина</span>
                             </div>
                             <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
-                                <Image itemProp="contentUrl" src={Img2} alt="expample"/>
+                                <Image src={Img2} alt="expample"/>
                                 <span itemProp="description">Делаем химчистку автомобилей</span>
                             </div>
                             <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
-                                <Image itemProp="contentUrl" src={Img5} alt="expample"/>
+                                <Image src={Img5} alt="expample"/>
                                 <span itemProp="description">Сдаем в прокат оборудование для уборки</span>
                             </div>
                             <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className={styles.img}>
-                                <Image itemProp="contentUrl" src={Img4} alt="expample"/>
+                                <Image src={Img4} alt="expample"/>
                                 <span itemProp="description">Моем окна</span>
                             </div>
                         </>
