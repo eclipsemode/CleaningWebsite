@@ -1,4 +1,3 @@
-"use client"
 import styles from './page.module.css'
 import Banner from "@components/Banner/Banner";
 import UnderBanner from "@components/UnderBanner";

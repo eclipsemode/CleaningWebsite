@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Container, Link, Stack} from "@mui/material";
+import {Button, Container, Link, Stack} from "@lib/mui";
 import styles from './index.module.css'
 import Image from "next/image";
 import MasterImg from '@public/images/master/master.png'

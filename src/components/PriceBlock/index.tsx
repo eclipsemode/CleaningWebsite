@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+
 import styles from './index.module.css'
-import {Container} from "@mui/material";
+import {Container} from "@lib/mui";
 import Title from "@ui/Title";
 import Products from "@store/features/products/Products";
-import { Element } from 'react-scroll'
+import { Element } from '@lib/react-scroll'
 
 
 const PriceBlock = () => {
@@ -15,7 +16,9 @@ const PriceBlock = () => {
 								</Element>
 						</Container>
 
+					<Suspense fallback={<></>}>
 						<Products/>
+					</Suspense>
 				</section>
 		);
 };

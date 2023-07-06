@@ -1,13 +1,14 @@
+"use client"
 import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './index.module.css'
-import {Box, Container, Stack} from "@mui/material";
+import {Box, Container, Stack} from "@lib/mui";
 import Title from "@ui/Title";
 import SampleNextArrow from "@ui/SampleNextArrow";
 import SamplePrevArrow from "@ui/SamplePrevArrow";
 import Slider from "react-slick";
-import { Element } from 'react-scroll'
+import { Element } from '@lib/react-scroll'
 
 const ReviewsBlock = () => {
 		const settings = {
@@ -37,7 +38,7 @@ const ReviewsBlock = () => {
 										</Box>
 										<Box className={styles.box}>
 												<Stack justifyContent='center' textAlign='center' padding='50px 10%' spacing={4}>
-														<p className={styles.text}>Отдичный сервис,быстро и качественно, пользуюсь услугой химчистки второй, полностью доволен результатам</p>
+														<p className={styles.text}>Отличный сервис,быстро и качественно, пользуюсь услугой химчистки второй, полностью доволен результатам</p>
 														<Stack spacing={1}>
 																<p className={styles.name}>Михаил</p>
 																<span className={styles.city}>Армавир</span>

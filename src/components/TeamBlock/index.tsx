@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container, Stack} from "@mui/material";
+import {Container, Stack} from "@lib/mui";
 import Title from "../../ui/Title";
 import styles from './index.module.css'
-import { Element } from 'react-scroll'
+import { Element } from '@lib/react-scroll'
 import Master1Img from '@public/images/master/master1.jpg'
 import Master2Img from '@public/images/master/master2.jpg'
 import Image from "next/image";

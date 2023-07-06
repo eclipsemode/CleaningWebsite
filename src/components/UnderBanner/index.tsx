@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Stack} from "@mui/material";
+import {Container, Stack} from "@lib/mui";
 import styles from './index.module.css'
 import Title from "@ui/Title";
 import FirstImg from '@public/images/why/uzrpy3alwh0rnv165bqrtxdc5x73jelg.png'
