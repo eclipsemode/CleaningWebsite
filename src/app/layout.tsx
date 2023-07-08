@@ -10,8 +10,27 @@ import React from "react";
 const inter = Inter({subsets: ['cyrillic']})
 
 export const metadata = {
+    viewport: {
+        width: 'device-width',
+        initialScale: 1,
+    },
     title: 'Химчистка мебели в Армавире',
     description: 'Химчистка мебели в Армавире, аренда оборудования для уборки, химчистка салона авто',
+    openGraph: {
+        type: 'website',
+        siteName: 'Crystal',
+        title: 'Химчистка мебели в Армавире',
+        description: 'Химчистка мебели в Армавире, аренда оборудования для уборки, химчистка салона авто',
+        locale: 'ru_RU',
+        url: 'https://crystal-divan.ru/',
+        images: [
+            {
+                url: 'https://crystal-divan.ru/images/logo.png',
+                width: '600',
+                height: '600'
+            }
+        ]
+    },
     referrer: 'origin-when-cross-origin',
     colorScheme: 'light',
     keywords: ['химчистка мебели', 'Армавир', 'уборка', 'химчистка авто', 'чистка ковров'],
@@ -22,8 +41,13 @@ export const metadata = {
     },
     verification: {
         google: 'google',
-        yandex: 'yandex'
+        yandex: 'yandex',
+        yahoo: 'yahoo',
+        other: {
+            me: ['my-email', 'my-link'],
+        },
     },
+    robots: 'index, follow',
 }
 
 function RootLayout({
@@ -32,14 +56,14 @@ function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
+        <html lang="ru">
         <body className={inter.className}>
         <Providers>
             <TopInfo/>
-            <Header />
+            <Header/>
             {children}
-            <Footer />
-            <ToTopArrow />
+            <Footer/>
+            <ToTopArrow/>
         </Providers>
         </body>
         </html>
