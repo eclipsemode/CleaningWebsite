@@ -16,6 +16,10 @@
     max-width: 540px;
 }
 
+.list {
+    padding: 0;
+}
+
 .subtitle {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -30,6 +34,7 @@
     column-gap: 5px;
     margin-bottom: 5px;
     margin-top: 5px;
+    text-align: left;
 }
 
 .img {

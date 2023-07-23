@@ -17,25 +17,32 @@ const Banner = () => {
     return (
         <Container>
             <Stack spacing={4}>
-                <section itemScope itemType="http://schema.org/BreadcrumbList" className={styles.root}>
+                <section className={styles.root}>
                     <Stack direction='column' justifyContent='center'>
-                        <h1 itemProp="name" className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
-                        <h2 itemProp="itemListElement" className={styles.subtitle}>В Армавире</h2>
-                        <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
-                            className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>С 2020 года 3489 единиц
-                            почищенной мебели
-                        </li>
-                        <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
-                            className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Биоразлагаемые чистящие
-                            средства
-                        </li>
-                        <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
-                            className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>Гарантия максимального
-                            результата
-                        </li>
-                        <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
-                            className={styles.additional}><AddIcon style={{color: '#0360c0'}}/>121 отзыв на 5 звезд
-                        </li>
+                        <h1 className={styles.title}>ПРАВИЛЬНАЯ ХИМЧИСТКА МЕБЕЛИ</h1>
+                        <h2 className={styles.subtitle}>В Армавире</h2>
+                        <ul className={styles.list} itemScope itemType="http://schema.org/BreadcrumbList">
+                            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
+                                className={styles.additional}>
+                                <AddIcon style={{color: '#0360c0'}}/>
+                                <span itemProp='name'>С 2020 года 3489 единиц почищенной мебели</span>
+                            </li>
+                            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
+                                className={styles.additional}>
+                                <AddIcon style={{color: '#0360c0'}}/>
+                                <span itemProp='name'>Биоразлагаемые чистящие средства</span>
+                            </li>
+                            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
+                                className={styles.additional}>
+                                <AddIcon style={{color: '#0360c0'}}/>
+                                <span itemProp='name'>Гарантия максимального результата</span>
+                            </li>
+                            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
+                                className={styles.additional}>
+                                <AddIcon style={{color: '#0360c0'}}/>
+                                <span itemProp='name'>121 отзыв на 5 звезд</span>
+                            </li>
+                        </ul>
 
                         <Stack direction='row' spacing={5} marginTop='20px'>
                             <Link href='tel:+79182330132'><Button variant="contained" sx={{
