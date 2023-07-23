@@ -10,6 +10,7 @@ import Image from "next/image";
 
 const Header = () => {
 		return (
+
 				<header className={styles.root}>
 						<Container className={styles.container} sx={{
 								display: 'flex',
