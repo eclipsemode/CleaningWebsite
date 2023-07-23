@@ -16,6 +16,7 @@ import SliderSlick from "@components/Banner/ui/SliderSlick";
 const Banner = () => {
     return (
         <Container>
+
             <Stack spacing={4}>
                 <section className={styles.root}>
                     <Stack direction='column' justifyContent='center'>
