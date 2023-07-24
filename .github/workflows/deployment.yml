@@ -72,7 +72,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           user: ${{ secrets.SSH_USER }}
           private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        command: |
-          cd ${{ env.PROJECT_REMOTE_FOLDER }};
-          git checkout main;
-          git pull;
+          command: |
+            cd ${{ env.PROJECT_REMOTE_FOLDER }};
+            git checkout main;
+            git pull;
