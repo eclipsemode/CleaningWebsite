@@ -27,21 +27,25 @@ const Banner = () => {
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
                                 <span itemProp='name'>С 2020 года 3489 единиц почищенной мебели</span>
+                                <meta itemProp="position" content="1"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
                                 <span itemProp='name'>Биоразлагаемые чистящие средства</span>
+                                <meta itemProp="position" content="2"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
                                 <span itemProp='name'>Гарантия максимального результата</span>
+                                <meta itemProp="position" content="3"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
                                 <span itemProp='name'>121 отзыв на 5 звезд</span>
+                                <meta itemProp="position" content="4"/>
                             </li>
                         </ul>
 
