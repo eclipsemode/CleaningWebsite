@@ -1,23 +1,12 @@
 name: Deploy App
 run-name: ${{ github.actor }} is running tests 🚀
-on:
-  push:
-    branches:
-      - master
-#    paths-ignore:
-#      - '.github/workflows/*'
+on: [push]
 jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code
         uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: yarn install
       - name: Lint application
@@ -28,12 +17,6 @@ jobs:
     steps:
       - name: Get repository code
         uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: yarn install
       - name: Test application
@@ -44,12 +27,6 @@ jobs:
     steps:
       - name: Get repository code
         uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: yarn install
       - name: Build application
