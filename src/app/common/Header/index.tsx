@@ -45,7 +45,7 @@ const Header = () => {
 														borderBottom: '1px solid #d8d8da',
 														borderRadius: 0,
 														paddingBottom: 0
-												}}><ScrollLink to="komanda" spy={true} smooth={true} duration={500}>Командаa</ScrollLink></Button>
+												}}><ScrollLink to="komanda" spy={true} smooth={true} duration={500}>Команда</ScrollLink></Button>
 												<Button sx={{
 														fontSize: '17px',
 														borderBottom: '1px solid #d8d8da',

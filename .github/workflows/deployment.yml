@@ -77,5 +77,3 @@ jobs:
             git checkout main;
             git pull;
             yarn run build;
-            sudo fuser -k 3000/tcp;
-            yarn start;
