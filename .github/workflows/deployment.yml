@@ -76,3 +76,4 @@ jobs:
             cd ${{ env.PROJECT_REMOTE_FOLDER }};
             git checkout main;
             git pull;
+            yarn run build;

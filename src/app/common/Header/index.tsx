@@ -57,7 +57,7 @@ const Header = () => {
 														borderBottom: '1px solid #d8d8da',
 														borderRadius: 0,
 														paddingBottom: 0
-												}}><ScrollLink to="voprosy" spy={true} smooth={true} duration={500}>Вопросыs</ScrollLink></Button>
+												}}><ScrollLink to="voprosy" spy={true} smooth={true} duration={500}>Вопросы</ScrollLink></Button>
 
 										</Stack>
 
