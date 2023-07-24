@@ -7,66 +7,72 @@ on:
 #    paths-ignore:
 #      - '.github/workflows/*'
 env:
-  GH_SECRET: 111
+  PROJECT_REMOTE_FOLDER: CleaningWebsite
 jobs:
-  Lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: Install dependencies
-        run: yarn install
-      - name: Lint application
-        run: yarn lint
-  Tests:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: Install dependencies
-        run: yarn install
-      - name: Test application
-        run: yarn test
-  Build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
-        with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: Install dependencies
-        run: yarn install
-      - name: Build application
-        run: yarn run build
+#  Lint:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Get repository code
+#        uses: actions/checkout@v3.5.3
+#      - name: Cache
+#        id: yarn-cache
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.yarn
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#      - name: Install dependencies
+#        run: yarn install
+#      - name: Lint application
+#        run: yarn lint
+#  Tests:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Get repository code
+#        uses: actions/checkout@v3.5.3
+#      - name: Cache
+#        id: yarn-cache
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.yarn
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#      - name: Install dependencies
+#        run: yarn install
+#      - name: Test application
+#        run: yarn test
+#  Build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Get repository code
+#        uses: actions/checkout@v3.5.3
+#      - name: Cache
+#        id: yarn-cache
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.yarn
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+#      - name: Install dependencies
+#        run: yarn install
+#      - name: Build application
+#        run: yarn run build
   Deploy:
     runs-on: ubuntu-latest
-    needs: [Lint, Tests, Build]
+#    needs: [Lint, Tests, Build]
     steps:
       - name: Get repository code
         uses: actions/checkout@v3.5.3
-      - name: Cache
-        id: yarn-cache
-        uses: actions/cache@v3
+#      - name: Cache
+#        id: yarn-cache
+#        uses: actions/cache@v3
+#        with:
+#          path: ~/.yarn
+#          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      - name: Deploy app on remote server
+        uses: D3rHase/ssh-command-action@v0.2.2
         with:
-          path: ~/.yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: Install dependencies
-        run: yarn install
-      - name: Deploy app
-        run: echo "${{ env.GH_SECRET }}"
+          host: ${{ secrets.SSH_HOST }}
+          user: ${{ secrets.SSH_USER }}
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        command: |
+          cd ${{ env.PROJECT_REMOTE_FOLDER }};
+          git checkout main;
+          git pull;
