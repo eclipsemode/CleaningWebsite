@@ -1,13 +1,10 @@
 import './globals.css'
-import {Inter} from 'next/font/google'
 import Header from "@app/common/Header";
 import Providers from "@root/providers";
 import Footer from "@app/common/Footer";
 import ToTopArrow from "@components/ToTopArrow";
 import TopInfo from "@components/TopInfo";
 import React from "react";
-
-const inter = Inter({subsets: ['cyrillic']})
 
 export const metadata = {
     viewport: {
@@ -57,7 +54,7 @@ function RootLayout({
 }) {
     return (
         <html lang="ru">
-        <body className={inter.className}>
+        <body>
         <Providers>
             <TopInfo/>
             <Header/>
