@@ -59,6 +59,7 @@ function RootLayout({
         <html lang="ru">
         <body className={inter.className}>
         <Providers>
+
             <TopInfo/>
             <Header/>
             {children}
