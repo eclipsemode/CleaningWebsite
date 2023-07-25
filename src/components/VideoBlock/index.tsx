@@ -28,6 +28,7 @@ const VideoBlock = () => {
                                 allowFullScreen></iframe>
                     </div>
                     <div itemScope itemType="https://schema.org/VideoObject" style={{display: 'none'}}>
+                        <meta itemProp="contentUrl" content="https://www.youtube.com/embed/fDy5SZ7YtmI"/>
                         <a itemProp="url" href="https://www.youtube.com/embed/fDy5SZ7YtmI">
 							<span itemProp="name">Химчистка мебели в г. Армавир</span>
 						</a>

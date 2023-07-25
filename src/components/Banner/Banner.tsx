@@ -26,25 +26,25 @@ const Banner = () => {
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <span itemProp='name'>С 2020 года 3489 единиц почищенной мебели</span>
+                                <Link itemProp="item" href='/'><span itemProp='name'>С 2020 года 3489 единиц почищенной мебели</span></Link>
                                 <meta itemProp="position" content="1"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <span itemProp='name'>Биоразлагаемые чистящие средства</span>
+                                <Link itemProp="item" href='/'><span itemProp='name'>Биоразлагаемые чистящие средства</span></Link>
                                 <meta itemProp="position" content="2"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <span itemProp='name'>Гарантия максимального результата</span>
+                                <Link itemProp="item" href='/'><span itemProp='name'>Гарантия максимального результата</span></Link>
                                 <meta itemProp="position" content="3"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <span itemProp='name'>121 отзыв на 5 звезд</span>
+                                <Link itemProp="item" href='/'><span itemProp='name'>121 отзыв на 5 звезд</span></Link>
                                 <meta itemProp="position" content="4"/>
                             </li>
                         </ul>

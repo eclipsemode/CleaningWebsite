@@ -137,10 +137,11 @@ const Products = () => {
                                                 </Typography>
                                                 <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                 {item.price && (
-                                                    <Typography variant="body2" color="text.secondary" fontSize='14px'
-                                                                marginTop='15px' style={{color: '#000'}}>
-                                                        <span itemProp="price" style={{fontSize: '24px'}}><meta itemProp="priceCurrency" content="RUB"/>{item.price}</span> РУБ.
-                                                    </Typography>
+                                                    <>
+                                                        <span style={{fontSize: '24px'}}>от </span>
+                                                        <span itemProp="price" style={{fontSize: '24px'}}>{item.price}</span>
+                                                        <span itemProp="priceCurrency" content="RUB"> РУБ.</span>
+                                                    </>
                                                 )}
                                                 </div>
                                             </CardContent>
