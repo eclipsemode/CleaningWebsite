@@ -1,5 +1,6 @@
 .root {
     background: #f4f4f4;
+    height: inherit;
 }
 
 .sliderContainer {
