@@ -12,6 +12,7 @@ import Img5 from "@public/images/additional/rent.jpg";
 import Img6 from "@public/images/additional/kovrolin.jpg";
 import Image from "next/image";
 import SliderSlick from "@components/Banner/ui/SliderSlick";
+import MaterialDialog from "../MaterialDialog";
 
 const Banner = () => {
     return (
@@ -32,13 +33,15 @@ const Banner = () => {
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <Link itemProp="item" href='/'><span itemProp='name'>Биоразлагаемые чистящие средства</span></Link>
+                                <Link itemProp="item" href='/'><span
+                                    itemProp='name'>Биоразлагаемые чистящие средства</span></Link>
                                 <meta itemProp="position" content="2"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
                                 className={styles.additional}>
                                 <AddIcon style={{color: '#0360c0'}}/>
-                                <Link itemProp="item" href='/'><span itemProp='name'>Гарантия максимального результата</span></Link>
+                                <Link itemProp="item" href='/'><span
+                                    itemProp='name'>Гарантия максимального результата</span></Link>
                                 <meta itemProp="position" content="3"/>
                             </li>
                             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem"
@@ -50,10 +53,7 @@ const Banner = () => {
                         </ul>
 
                         <Stack direction='row' spacing={5} marginTop='20px'>
-                            <Link href='tel:+79182330132'><Button variant="contained" sx={{
-                                maxWidth: '170px',
-                                width: '100%'
-                            }}>Заказать</Button></Link>
+                            <MaterialDialog textButton='Заказать'/>
                             <Image src={YandexImg} width={150} height={50} alt="yandex"/>
                         </Stack>
                     </Stack>
