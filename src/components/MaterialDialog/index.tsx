@@ -1,5 +1,5 @@
 'use client'
-import React, {SyntheticEvent} from 'react';
+import React from 'react';
 import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, FormControl, InputLabel, Select, MenuItem, SelectChangeEvent} from "@lib/mui";
 import {useForm} from "react-hook-form";
 import axios from "axios";

@@ -18,7 +18,7 @@ const Header = () => {
 								alignItems: 'center',
 								justifyContent: 'space-between'
 						}}>
-								<Image width='100' src={Logo} alt="logotype"/>
+								<Image width='100' src={Logo} alt="logotype" className={styles.logo}/>
 
 								<Stack className={styles.menuBlock} alignItems='center'>
 										<Stack direction='row' columnGap={1}>
@@ -64,8 +64,8 @@ const Header = () => {
 								</Stack>
 
 								<Stack rowGap={2}>
-										<Stack direction='row' alignItems='center' columnGap={5}>
-												<Stack direction='row' alignItems='center'>
+										<Stack direction='row' alignItems='center' columnGap={5} className={styles.socialContainer}>
+												<Stack direction='row' alignItems='center' className={styles.number}>
 														<CallIcon/>
 														<LinkMui color='#000' fontWeight='700' fontSize='18px' href="tel:+79182330132"
 																	underline="none">
@@ -79,7 +79,7 @@ const Header = () => {
 												</Stack>
 										</Stack>
 
-									<LinkMui href='tel:+79182330132'><Button variant="contained">Бесплатная консультация</Button></LinkMui>
+									<LinkMui href='tel:+79182330132'><Button variant="contained" className={styles.consult}>Бесплатная консультация</Button></LinkMui>
 								</Stack>
 						</Container>
 				</header>

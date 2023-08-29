@@ -26,10 +26,6 @@ const Footer = () => {
 
 								<Stack spacing={2}>
 										<Stack className={styles.topMenu} direction='row' spacing={2} alignItems='center' justifyContent='space-between'>
-												<LinkMUI style={{color: '#fff'}} underline='none' href='#'>О компании</LinkMUI>
-												<LinkMUI style={{color: '#fff'}} underline='none' href='#'>Оборудование</LinkMUI>
-												<LinkMUI style={{color: '#fff'}} underline='none' href='#'>Сертификаты</LinkMUI>
-												<LinkMUI style={{color: '#fff'}} underline='none' href='#'>Наш блог</LinkMUI>
 												<Stack direction='row' alignItems='center' spacing={1}>
 														<InstagramIcon style={{color: '#fff'}}/>
 														<YouTubeIcon style={{color: '#fff'}}/>
