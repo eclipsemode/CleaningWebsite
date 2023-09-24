@@ -1,0 +1,17 @@
+.btn {
+
+}
+
+.btnContainer {
+
+}
+
+@media (max-width: 500px) {
+    .btn {
+        width: 100%;
+    }
+
+    .btnContainer {
+        width: 100%;
+    }
+}

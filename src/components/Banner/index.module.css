@@ -69,6 +69,10 @@
     padding: 0;
 }
 
+.actionContainer {
+
+}
+
 @media (max-width: 1250px) {
     .bottomSection {
         padding: 0 20px;
@@ -87,5 +91,17 @@
 
     .title {
         width: min-content;
+    }
+}
+
+@media (max-width: 500px) {
+    .actionContainer {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .actionContainer > img {
+        margin: auto !important;
     }
 }

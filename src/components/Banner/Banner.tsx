@@ -52,8 +52,8 @@ const Banner = () => {
                             </li>
                         </ul>
 
-                        <Stack direction='row' spacing={5} marginTop='20px'>
-                            <MaterialDialog textButton='Заказать'/>
+                        <Stack direction='row' spacing={5} marginTop='20px' className={styles.actionContainer}>
+                            <MaterialDialog textButton='Оставить заявку'/>
                             <Image src={YandexImg} width={150} height={50} alt="yandex"/>
                         </Stack>
                     </Stack>

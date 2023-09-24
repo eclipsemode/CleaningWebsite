@@ -3,6 +3,8 @@ import React from 'react';
 import {Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField, FormControl, InputLabel, Select, MenuItem, SelectChangeEvent} from "@lib/mui";
 import {useForm} from "react-hook-form";
 import axios from "axios";
+import {Checkbox, FormControlLabel} from "@mui/material";
+import styles from './index.module.css'
 
 interface IProps {
     textButton: string
@@ -12,8 +14,8 @@ interface IFormProps {
     name: string,
     tel: string,
     type: string,
-    size: string,
-    commentary: string
+    commentary: string,
+    smell: boolean
 }
 
 const MaterialDialog = ({textButton}: IProps) => {
@@ -42,8 +44,8 @@ const MaterialDialog = ({textButton}: IProps) => {
         let message = `<b>Заявка с сайта</b>\n`;
         message += `<b>Имя: </b>${data.name}\n`;
         message += `<b>Телефон: </b>${data.tel}\n`;
-        message += `<b>Тип обивки: </b>${data.type}\n`;
-        message += `<b>Размеры: </b>${data.size}\n`;
+        message += `<b>Что чистить: </b>${data.type}\n`;
+        message += `<b>Неприятный запах: </b>${data.smell ? 'Да' : 'Нет'}\n`;
         message += `<b>Комментарий к заказу: </b>${data.commentary}\n`;
 
         axios.post(urlApi, {
@@ -58,8 +60,8 @@ const MaterialDialog = ({textButton}: IProps) => {
     }
 
     return (
-        <div>
-            <Button variant="contained" onClick={handleClickOpen}>
+        <div className={styles.btnContainer}>
+            <Button variant="contained" onClick={handleClickOpen} className={styles.btn}>
                 {textButton}
             </Button>
             <Dialog open={open} onClose={handleClose}>
@@ -70,8 +72,28 @@ const MaterialDialog = ({textButton}: IProps) => {
                             Пожалуйста, введите данные для отправки.
                         </DialogContentText>
 
+                        <FormControl variant="standard" sx={{ width: '100%', margin: '0' }} >
+                            <InputLabel>Что нужно почистить?</InputLabel>
+                            <Select
+                                labelId="demo-simple-select-standard-label"
+                                id="demo-simple-select-standard"
+                                value={type}
+                                onChange={handleChange}
+                                label="Что нужно почистить"
+                                inputProps={
+                                    {...register('type', {required: true})}
+                                }
+                            >
+                                <MenuItem value='Текстиль'>Диван</MenuItem>
+                                <MenuItem value='Кожа'>Матрас</MenuItem>
+                                <MenuItem value='Ковролин'>Стулья</MenuItem>
+                                <MenuItem value='Ковролин'>Ковролин</MenuItem>
+                            </Select>
+                        </FormControl>
+
+                        <FormControlLabel sx={{marginTop: '20px'}} control={<Checkbox {...register('smell')} />} label="Неприятный запах" />
+
                         <TextField
-                            autoFocus
                             margin="dense"
                             label="Имя"
                             type="text"
@@ -87,33 +109,6 @@ const MaterialDialog = ({textButton}: IProps) => {
                             fullWidth
                             variant="standard"
                             {...register('tel', {required: true})}
-                        />
-
-                        <FormControl variant="standard" sx={{ width: '100%', margin: '0' }} >
-                            <InputLabel id="demo-simple-select-standard-label">Тип обивки</InputLabel>
-                            <Select
-                                labelId="demo-simple-select-standard-label"
-                                id="demo-simple-select-standard"
-                                value={type}
-                                onChange={handleChange}
-                                label="Тип обивки"
-                                inputProps={
-                                {...register('type', {required: true})}
-                                }
-                            >
-                                <MenuItem value='Текстиль'>Текстиль</MenuItem>
-                                <MenuItem value='Кожа'>Кожа</MenuItem>
-                                <MenuItem value='Ковролин'>Ковролин</MenuItem>
-                            </Select>
-                        </FormControl>
-
-                        <TextField
-                            margin="dense"
-                            label="Размер"
-                            type="text"
-                            fullWidth
-                            variant="standard"
-                            {...register('size', {required: true})}
                         />
 
                         <TextField
