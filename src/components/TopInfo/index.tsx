@@ -82,7 +82,7 @@ const TopInfo = () => {
 										</Stack>
 
 										<div className={styles.menuButtonContainer} ref={buttonRef} style={{cursor: 'pointer', zIndex: '101'}} onClick={() => setOpened(!opened)}>
-												<MenuIcon className={styles.menuButton} />
+												<MenuIcon className={styles.menuButton} sx={{width: '40px', height: '40px'}} />
 										</div>
 								</div>
 						</Container>
