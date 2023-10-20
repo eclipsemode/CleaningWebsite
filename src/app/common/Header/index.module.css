@@ -9,10 +9,6 @@
 }
 
 @media (max-width: 1050px) {
-    .logo {
-        height: 60px;
-        width: 60px;
-    }
     .number {
         display: none;
     }

@@ -18,7 +18,7 @@ const Header = () => {
 								alignItems: 'center',
 								justifyContent: 'space-between'
 						}}>
-								<Image width='100' src={Logo} alt="logotype" className={styles.logo}/>
+								<Image src={Logo} width={100} alt="logotype" className={styles.logo}/>
 
 								<Stack className={styles.menuBlock} alignItems='center'>
 										<Stack direction='row' columnGap={1}>

@@ -6,6 +6,7 @@ import ToTopArrow from "@components/ToTopArrow";
 import TopInfo from "@components/TopInfo";
 import React from "react";
 import BottomButton from "@components/BottomButton";
+import Loading from "@app/loading";
 
 export const metadata = {
     viewport: {
