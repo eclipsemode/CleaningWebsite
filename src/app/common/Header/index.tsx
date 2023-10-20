@@ -1,6 +1,6 @@
 "use client"
 import styles from './index.module.css'
-import Logo from '@public/images/logo.png'
+import Logo from '@public/images/logo_main.png'
 import {Button, Container, Link as LinkMui, Stack} from "@mui/material";
 import CallIcon from '@mui/icons-material/Call';
 import WhatsApp from '@public/images/social/WhatsApp.png'

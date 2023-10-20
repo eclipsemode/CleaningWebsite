@@ -5,7 +5,7 @@ import Footer from "@app/common/Footer";
 import ToTopArrow from "@components/ToTopArrow";
 import TopInfo from "@components/TopInfo";
 import React from "react";
-import SwipeableEdgeDrawer from "@components/SwipeableEdgeDrawer";
+import BottomButton from "@components/BottomButton";
 
 export const metadata = {
     viewport: {
@@ -61,7 +61,7 @@ function RootLayout({
             <Header/>
             {children}
             <Footer/>
-            <SwipeableEdgeDrawer />
+            <BottomButton />
             <ToTopArrow/>
         </Providers>
         </body>
